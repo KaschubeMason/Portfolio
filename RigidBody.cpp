@@ -593,37 +593,3 @@ bool RigidBody::GetResolveCollision() const
 {
 	return resolveCollisions_;
 }
-
-
-//======================================================================//
-//																		//
-//						Deprication Graveyard							//
-//																		//
-//======================================================================//
-
-// logic was initially used in OnCollisionEnter to calculate velocities after collision
-
-	//glm::vec2 f1 = vi1 * m1 / dt;								// force the object applies in the collision
-	//glm::vec2 f2 = vi2 * m2 / dt;								// same for other collider
-	//float alpha1 = 0;
-	//float alpha2 = 0;
-	//alpha1 = glm::dot(vi1 == glm::vec2(0, 0) ? vi1 : glm::normalize(vi1), collision.normal_);	// what % of the momentum is dumped into the other object
-	//alpha2 = glm::dot(vi2 == glm::vec2(0, 0) ? vi2 : glm::normalize(vi2), collision.normal_);	// ^ same for other object
-	//glm::vec2 fa1 = -collision.normal_ * glm::length(f1) * alpha1;									// amount of force applied by first object
-	//glm::vec2 fa2 = collision.normal_ * glm::length(f2) * alpha2;									// ammount of force applied by other object
-	//glm::vec2 vf1;
-	//glm::vec2 vf2;
-
-	//if ((aBody->velocity_.x > epsilon && bBody->velocity_.x > epsilon) ||
-	//	(aBody->velocity_.y > epsilon && bBody->velocity_.y > epsilon) ||
-	//	(aBody->velocity_.x < -epsilon && bBody->velocity_.x < -epsilon) ||
-	//	(aBody->velocity_.y < -epsilon && bBody->velocity_.y < -epsilon))		// This is INCREDIBLY scuffed. There is no operator overloads for glm::vec2 (</>) glm::vec2 so I have to do it manually
-	//{
-	//	vf1 = vi1 + (fa1 + fa2) * dt / m1;	// sum forces applied, multiply by change in time,
-	//	vf2 = vi2 + (-fa2 - fa1) * dt / m2;	// factor out mass to get change in velocity, add to original velocity
-	//}
-	//else
-	//{
-	//	vf1 = vi1 + (fa1 - fa2) * dt / m1;	// sum forces applied, multiply by change in time,
-	//	vf2 = vi2 + (fa2 - fa1) * dt / m2;	// factor out mass to get change in velocity, add to original velocity
-	//}
