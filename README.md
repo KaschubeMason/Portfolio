@@ -11,7 +11,7 @@ The player must complete puzzles utilizing the creatures' unique abilities in or
 Copyright © 2020 DigiPen Institute of Technology, All rights reserved.
 
 Link to the game: https://games.digipen.edu/games/return-to-the-skyway
-
+Alternative link: https://store.steampowered.com/app/2066270/Return_to_the_Skyway/
 ---
 
 the files contained are:
