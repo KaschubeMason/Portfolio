@@ -11,4 +11,4 @@ If you have any questions, please feel free to reach out:
 
 **LinkedIn**: https://www.linkedin.com/in/mason-kaschube/
 
-**Website**: *In-Progress*
+**Website**: https://masonkaschube.wixsite.com/masonkaschube
