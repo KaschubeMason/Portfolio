@@ -1,3 +1,14 @@
-# Generic AStar
+# Portfolio
+A portfolio repository containing code samples from projects I've worked on in the past.
 
-This file contains my implementation of a Generic A* algorithm. It uses templatization and callback functions, allowing various data types and custom logic to be used.
+Each project has its own separate branch in the repository so feel free to check them all out.
+
+---
+
+If you have any questions, please feel free to reach out:
+
+**Email**: masonkaschube@gmail.com
+
+**LinkedIn**: https://www.linkedin.com/in/mason-kaschube/
+
+**Website**: https://masonkaschube.wixsite.com/masonkaschube
